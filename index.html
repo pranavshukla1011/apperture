@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Welcome | Portrait</title>
+    <style>
+        header{
+            min-height:100vh;
+            background: url(img/Untitled\ design.svg) center center/cover;
+        }
+        @media screen and (max-width:670px){
+            header{
+                min-height: 50vh;
+            }
+        }
+
+        .section{
+            padding-top:4vw;
+            padding-bottom:4vw;
+        }
+        
+        .tabs .indicator {
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background-color: indigo;
+            will-change: left, right;
+        }
+
+        .tabs .tab a:hover, .tabs .tab a.active {
+           background-color: transparent;
+           color: #ee6e73;
+        }
+       
+        .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background-color: lightgray;
+            outline: none;
+        }
+
+        .connect{
+            font-size: 0.7rem;
+        }
+
+        #slide-out{
+            padding-top:20vh;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wrapper transparent " id="home">
+            <div class="container">
+               <a href="#home" class="brand-logo grey-text text-darken-2">Portrait</a>
+               <a href="#" class="sidenav-trigger left grey-text text-darken-2" data-target="slide-out"><i class="material-icons">menu</i></a>
+               <ul class="right hide-on-med-and-down">
+                    <li><a href="#home" class="grey-text text-darken-2">Home</a></li>
+                    <li><a href="#photos" class="grey-text text-darken-2">Photos</a></li>
+                    <li><a href="#contact" class="grey-text text-darken-2">Contact</a></li>
+                    <li><a href="#services" class="grey-text text-darken-2">Services</a></li>
+                   <li><a href="" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                   <li><a href="" class="tooltipped btn-floating btn-small blue darken-1" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                   <li><a href="" class="tooltipped btn-floating btn-small pink darken-2" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+            </div>
+        </nav>
+        
+        <ul class="sidenav grey lighten-4" id="slide-out">
+            <div class="row" data-aos="fade-right">
+                <div class="col s6 offset-s3 center-align">
+                    <li><a href="#home">Home</a></li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3 center-align">
+                    <li><a href="#photos">Photos</a></li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3 center-align">
+                    <li><a href="#services">Services</a></li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 offset-s3 center-align">
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </div>
+            <li>
+                <a href="" class=" btn btn-large indigo darken-4">
+                    <i class="fab white-text fa-facebook-f"></i> 
+                    <p class="connect left-align">Visit my facebook page</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class=" btn  blue darken-1" >
+                    <i class="fab white-text fa-linkedin-in"></i>
+                    <p class="connect left-align">Connect via LinkedIn </p>
+                </a>
+            </li>
+            <li>
+                <a href="" class=" btn  pink darken-2" >
+                    <i class="fab white-text fa-instagram"></i> 
+                    <p class="connect left-align">Follow me on Instagram</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="container section scrollspy" id="photos">
+        
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/portrait.svg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Portraits</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis eligendi placeat autem itaque esse, quia soluta illum odit architecto inventore ratione quidem sint quibusdam voluptates sequi vel veniam voluptas?</p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/city.svg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="indigo-text text-darken-4">CityScape</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis eligendi placeat autem itaque esse, quia soluta illum odit architecto inventore ratione quidem sint quibusdam voluptates sequi vel veniam voluptas?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/nature.svg" alt="" class="materialboxed responsive-img">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Nature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis eligendi placeat autem itaque esse, quia soluta illum odit architecto inventore ratione quidem sint quibusdam voluptates sequi vel veniam voluptas?</p>
+            </div>
+        </div>
+    </section>
+   
+   <div class="parallax-container">
+       <div class="parallax">
+           <img src="img/street.jpg" alt="" class = "responsive-img">
+       </div>
+   </div>
+
+   <section class="container section scrollspy" id="services">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-4">What I do...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi ullam ducimus magnam consequatur dolorum quos itaque aspernatur sit labore, praesentium eum esse ut voluptate non dolore ad similique officiis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad nihil blanditiis odit ratione, consectetur non rem veniam aliquam earum commodi obcaecati quidem eaque natus ipsa modi placeat fugiat corrupti! Repudiandae.</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6"><a href="#photography" class="indigo-text text-darken-4">Photography</a></li>
+                <li class="tab col s6"><a href="#editing" class="indigo-text text-darken-4">Editing</a></li>
+            </ul>
+            <div class="col s12" id="photography">
+                <p class="flow-text indigo-text text-darken-4">Photography</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptates facere ad dignissimos inventore quis. Adipisci dolores tempora consequuntur ducimus commodi porro quis. Saepe neque, voluptas error modi tenetur voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus consectetur saepe! Officia consequuntur facilis temporibus fugiat amet illo suscipit, numquam libero quod veniam dolore ratione, voluptates, doloremque aut quos?</p>
+            </div>
+            <div class="col s12" id="editing">
+                <p class="flow-text indigo-text text-darken-4">Editing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptates facere ad dignissimos inventore quis. Adipisci dolores tempora consequuntur ducimus commodi porro quis. Saepe neque, voluptas error modi tenetur voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus consectetur saepe! Officia consequuntur facilis temporibus fugiat amet illo suscipit, numquam libero quod veniam dolore ratione, voluptates, doloremque aut quos?</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/stars.svg" alt="" class = "responsive-img">
+    </div>
+</div>
+
+<div class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get in touch...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo, voluptatum amet magni quasi commodi perspiciatis tempore architecto ab velit pariatur corrupti autem quidem? Perspiciatis minus itaque architecto voluptatibus quam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo exercitationem repellat quae quos, necessitatibus facere ratione dignissimos. Cupiditate officia voluptas ut eos amet necessitatibus maiores possimus, quis omnis aut!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti temporibus, exercitationem facere magnam reiciendis fugiat ducimus magni repudiandae laboriosam a suscipit ratione qui repellendus, voluptatem voluptatum, ipsam cupiditate soluta placeat.</p>
+        </div>
+
+        <div class="col s12 l5 offset-l2">
+            <form action="">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="" id="email">
+                    <label for="email">Your email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="" id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" class="datepicker" id="date">
+                    <label for="date">Choose a date to schedule a meeting</label>
+                </div>
+                <div class="input-field">
+                    <p>Services Required....</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photography</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Editing</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>About Me</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quae officia explicabo. Ex quidem est, numquam quam cum aliquid minima, magni ducimus odio tempora, laborum praesentium quia nam earum ab.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus hic doloremque facere odit? Nostrum laudantium, nesciunt obcaecati illum sunt quos sed ratione ea accusantium vel! Ea minima molestias reprehenderit quasi.</p>
+            </div>
+
+            <div class="col s12 l4 offset-l2 hide-on-med-and-down">
+                <h5>Connect</h5>
+                <ul>
+                    <li style="padding-bottom: 1rem;"><a href="#!" class="btn indigo darken-4 waves-effect waves-light grey-text text-lighten-3">Facebook</a></li>
+                    <li style="padding-bottom: 1rem;"><a href="#!" class="btn blue darken-1 waves-effect waves-light grey-text text-lighten-3">LinkedIn  </a></li>
+                    <li><a href="#!" class="btn pink darken-2 grey-text waves-effect waves-light text-lighten-3">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col s12 l4 offset-l2 show-on-med-and-down hide-on-large-only hide-on-extra-large-only">
+                <h5>Connect</h5>
+                <span style="padding-right:1rem"><a href="" class="tooltipped btn-floating indigo darken-4" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a></span>
+                <span style="padding-right:1rem"><a href="" class="tooltipped btn-floating blue darken-1" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="padding-right:1rem"><a href="" class="tooltipped btn-floating pink darken-2" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2021 Pranav Shukla</div>
+    </div>
+</footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>       
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends:true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
